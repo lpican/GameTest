@@ -29,17 +29,17 @@ public class CheesePlease1 extends Game {
 	public void create()
 	{
 		batch = new SpriteBatch();
-		mouseyTexture = new Texture(Gdx.files.internal("../assets/mouse.png"));
+		mouseyTexture = new Texture("mouse.png");
 		mouseyX = 20;
 		mouseyY = 20;
 
-		cheeseTexture = new Texture(Gdx.files.internal("../assets/cheese.png"));
+		cheeseTexture = new Texture("cheese.png");
 		cheeseX = 400;
 		cheeseY = 300;
 
-		floorTexture = new Texture(Gdx.files.internal("../assets/tiles.jpg"));
+		floorTexture = new Texture("tiles.jpg");
 		floorSprite = new Sprite(floorTexture);
-		winMessage = new Texture(Gdx.files.internal("../assets/you-win.png"));
+		winMessage = new Texture("you-win.png");
 
 		win = false;
 	}
